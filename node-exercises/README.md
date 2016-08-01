@@ -40,6 +40,8 @@ Write a node.JS program that list the content of the current directory indicatin
     FILE:results.txt
     FILE:test.txt
 
+_Hint: You need `fs.readdirSync`, `fs.lstatSync` and `isDirectory()`_
+
 ## 5. Writing on txt
 
 Write a node.JS program that creates a txt file with the text passed as a parameter
@@ -48,6 +50,8 @@ $ node ex5.js "hey ho! let's go"
 The file was saved!
 $ cat myText.txt 
 hey ho! let's go
+
+_Hint: You need `fs.writeFile`_
 
 ### Extra:
 
@@ -64,7 +68,7 @@ Improve the previous exercise to also read and shows in the console the content 
     $ cat mySuperText.txt 
     it's a long way to the top...
 
-    
+
 ##7. Processing values
 
 Write a node.JS program that process local txt and return values as a Array.
