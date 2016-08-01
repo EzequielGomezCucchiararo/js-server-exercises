@@ -22,22 +22,51 @@ _Hint: You need npm module - [`fs`](https://nodejs.org/api/fs.html)_
 
 Write a node.JS program that read and shows in the console the html code of one external page. The link of the external page should be read from a file `link.txt`
 
-_Hint: You need npm module -> [`request`](https://github.com/request/request)_  
+_Hint: You need npm module -> [`request`](https://github.com/request/request)_ 
 
 ##4. File list
 
-Write a node.JS program that list the name files of the current directory
+Write a node.JS program that list the content of the current directory indicating if is a directory or a file
 
-_Hint:_
+    $ node ex4.js 
+    FILE:ex1.js
+    FILE:ex2.js
+    FILE:ex3.js
+    FILE:ex4.js
+    FILE:getLinksNode.js
+    FILE:link.txt
+    DIR :node_modules
+    FILE:recursiveContentsDir.js
+    FILE:results.txt
+    FILE:test.txt
 
-    var path = "/Users/User/ProjectExample/Files"; <- Assign a local path // text1.txt, text2.txt, example.html...*_
+## 5. Writing on txt
 
-##6. Writing on txt
-Write a node.JS program that creates a txt file and write on it.
+Write a node.JS program that creates a txt file with the text passed as a parameter
 
-_Hint: You need npm module -> concat-stream_
+$ node ex5.js "hey ho! let's go"
+The file was saved!
+$ cat myText.txt 
+hey ho! let's go
 
+### Extra:
+
+Improve the previous exercise to user the first parameter as the name of the destination file
+
+### More Extra:
+
+Improve the previous exercise to also read and shows in the console the content of the file
+
+    $ node ex5.js mySuperText.txt "it's a long way to the top..."
+    The file was saved!
+    it's a long way to the top...
+
+    $ cat mySuperText.txt 
+    it's a long way to the top...
+
+    
 ##7. Processing values
+
 Write a node.JS program that process local txt and return values as a Array.
 
 _Hint: You need npm module -> concat-stream_
@@ -46,6 +75,22 @@ _Hint: You need npm module -> concat-stream_
 Write a node.JS program that shows you the local hour of server.
 
 _Hint: You need npm module -> strftime_
+
+## ***. Parse external webpage (difficult!!)
+
+Write a node program that read the page `https://nodejs.org/api/all.html` and writes in a file (and shows it content after reading it) the **internal links** that contain some text passed as a parameter. 
+
+    $ node getLinksNode.js createServer
+    The file was saved!
+    https://nodejs.org/api/all.html#http_http_createserver_requestlistener
+    https://nodejs.org/api/all.html#https_https_createserver_options_requestlistener
+    https://nodejs.org/api/all.html#net_net_createserver_options_connectionlistener
+    https://nodejs.org/api/all.html#tls_tls_createserver_options_secureconnectionlistener
+
+    $ node getLinksNode.js readFile
+    The file was saved!
+    https://nodejs.org/api/all.html#fs_fs_readfile_file_options_callback
+    https://nodejs.org/api/all.html#fs_fs_readfilesync_file_options
 
 ##9. Compare values
 Write a node.JS program that search information in .txt file and returns you how much coincidences find.
