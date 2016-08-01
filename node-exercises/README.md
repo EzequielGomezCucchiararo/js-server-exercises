@@ -20,11 +20,17 @@
 ---
 
 ## 1. Connection to the server
-Write a node.JS program that execute a connection to server and return success message like *"Success, i'm listening from port: $port"*
+
+Write a node.JS program that execute a connection to server and return success message like *"Success, i'm listening from port: 3000"*
 
 _Hint: You need npm module - http_
 
+### Extra
+
+Set the port of the connection using an environment variable PORT
+
 ## 2. Show Content
+
 Write a node.JS program that read a txt file in local machine and shows the content of it.
 
 ##3. Add Message
