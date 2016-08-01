@@ -46,10 +46,10 @@ _Hint: You need `fs.readdirSync`, `fs.lstatSync` and `isDirectory()`_
 
 Write a node.JS program that creates a txt file with the text passed as a parameter
 
-$ node ex5.js "hey ho! let's go"
-The file was saved!
-$ cat myText.txt 
-hey ho! let's go
+    $ node ex5.js "hey ho! let's go"
+    The file was saved!
+    $ cat myText.txt 
+    hey ho! let's go
 
 _Hint: You need `fs.writeFile`_
 
