@@ -1,23 +1,4 @@
-*Skylab Coders - BootCamp 2016*
-
-# *Welcome To Node.JS*
-## Exercises Node.JS 
-
-*You'll need the next npm modules:*
-
-`bl` for Buffer List
-
-    npm install bl
-    npm install concat-stream
-    npm install net
-    npm install strftime
-    npm install http
-    npm install through2-map
-    npm install url
-
-**!! https://www.npmjs.com/search?q=npm <- Official page of the modules with examples**
-
----
+# Node Exercises
 
 ## 1. Connection to the server
 
@@ -31,18 +12,20 @@ Set the port of the connection using an environment variable PORT
 
 ## 2. Show Content
 
-Write a node.JS program that read a txt file in local machine and shows the content of it.
+Write a node program that read a file (passed as parameter) in local machine and shows in the console the content of it.
 
-##3. Add Message
-Write a node.JS program that a txt file in local machine, shows the content and add: *"this message come from NODE.JS!"*, finally, assure changes.
+    node app.js test.txt
 
-##4. HTML Code
-Write a node.JS program that read and shows the html code of one external page
+_Hint: You need npm module - [`fs`](https://nodejs.org/api/fs.html)_
 
-_Hint: You need npm module -> fs_  
-_Hint: You need npm module -> url_
+## 3. HTML Code
 
-##5. File list
+Write a node.JS program that read and shows in the console the html code of one external page. The link of the external page should be read from a file `link.txt`
+
+_Hint: You need npm module -> [`request`](https://github.com/request/request)_  
+
+##4. File list
+
 Write a node.JS program that list the name files of the current directory
 
 _Hint:_
