@@ -4,7 +4,8 @@
 
 Write a node.JS program that execute a connection to server and return success message like *"Success, i'm listening from port: 3000"*
 
-_Hint: You need npm module - http_
+_Hint: Yo
+u need npm module - http_
 
 ### Extra
 
@@ -69,9 +70,9 @@ Improve the previous exercise to also read and shows in the console the content 
     it's a long way to the top...
 
 
-##7. Processing values
+## 6. Processing values
 
-Write a node.JS program that process local txt and return values as a Array.
+Write a node program that process local txt and return values as a Array.
 
 _Hint: You need npm module -> concat-stream_
 
